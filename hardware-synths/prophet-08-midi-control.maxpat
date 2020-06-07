@@ -39,12 +39,71 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"fontname" : "Menlo Regular",
+					"fontsize" : 10.0,
+					"id" : "obj-10",
+					"linecount" : 8,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 388.637917593121415, 137.435227476795262, 63.0, 100.0 ],
+					"presentation_linecount" : 8,
+					"text" : "connect the value from probatio here \n\n|\nV"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Menlo Regular",
+					"fontsize" : 10.0,
+					"id" : "obj-9",
+					"linecount" : 8,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 275.792413711547852, 350.744932761073869, 63.0, 100.0 ],
+					"presentation_linecount" : 8,
+					"text" : "connect the value from probatio here \n(0-127)\n|\nV"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Menlo Regular",
+					"fontsize" : 10.0,
+					"id" : "obj-8",
+					"linecount" : 9,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 31.892564594745636, 131.935227476795262, 61.0, 111.0 ],
+					"presentation_linecount" : 9,
+					"text" : "connect the value from probatio here \n(0-127)\n|\nV"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Menlo Regular",
+					"id" : "obj-7",
+					"linecount" : 4,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 405.985025122761613, 4.738843417922908, 131.889364659786224, 62.0 ],
+					"presentation_linecount" : 7,
+					"text" : "Always have this object on the max patch to remember interface values"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-6",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 563.636332392692566, 81.818177282810211, 56.0, 22.0 ],
+					"patching_rect" : [ 405.985025122761613, 71.900822460651398, 56.0, 22.0 ],
 					"restore" : 					{
 						"MIDI-device" : [ 3 ],
 						"midi-channel[1]" : [ 0 ],
@@ -65,7 +124,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 531.573413968086243, 240.512403428554535, 77.0, 22.0 ],
+					"patching_rect" : [ 534.052752673625946, 345.73659629595204, 77.0, 22.0 ],
 					"text" : "r midi-device"
 				}
 
@@ -77,7 +136,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 47.413225889205933, 210.223150849342346, 77.0, 22.0 ],
+					"patching_rect" : [ 31.892564594745636, 320.140500128269196, 77.0, 22.0 ],
 					"text" : "r midi-device"
 				}
 
@@ -88,7 +147,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 66.383333384990692, 102.0, 79.0, 22.0 ],
+					"patching_rect" : [ 201.920515954494476, 90.859505414962769, 79.0, 22.0 ],
 					"text" : "s midi-device"
 				}
 
@@ -100,7 +159,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 66.383333384990692, 70.879338002960139, 77.0, 22.0 ],
+					"patching_rect" : [ 201.920515954494476, 59.738843417922908, 77.0, 22.0 ],
 					"text" : "prepend port"
 				}
 
@@ -112,7 +171,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 153.383333384990692, 15.879338002960139, 99.0, 20.0 ],
+					"patching_rect" : [ 288.920515954494476, 4.738843417922908, 99.0, 20.0 ],
 					"text" : "Refresh List"
 				}
 
@@ -124,7 +183,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 171.383333384990692, 41.879338002960139, 99.0, 20.0 ],
+					"patching_rect" : [ 306.920515954494476, 30.738843417922908, 99.0, 20.0 ],
 					"text" : "MIDI Device"
 				}
 
@@ -137,7 +196,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 66.383333384990692, 15.879338002960139, 20.0, 20.0 ]
+					"patching_rect" : [ 201.920515954494476, 4.738843417922908, 20.0, 20.0 ]
 				}
 
 			}
@@ -150,7 +209,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 66.383333384990692, 41.879338002960139, 100.0, 22.0 ],
+					"patching_rect" : [ 201.920515954494476, 30.738843417922908, 100.0, 22.0 ],
 					"varname" : "MIDI-device"
 				}
 
@@ -162,7 +221,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 92.883333384990692, 15.879338002960139, 52.0, 22.0 ],
+					"patching_rect" : [ 228.420515954494476, 4.738843417922908, 52.0, 22.0 ],
 					"text" : "midiinfo"
 				}
 
@@ -176,7 +235,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 464.877584174275285, 217.19170743227005, 55.220831950505726, 30.0 ],
+					"patching_rect" : [ 467.356922879814988, 322.415900299667555, 55.220831950505726, 30.0 ],
 					"presentation_linecount" : 2,
 					"text" : "MIDI Channel"
 				}
@@ -190,7 +249,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 118.209779620170593, 135.28675749226386, 153.0, 18.0 ],
+					"patching_rect" : [ 102.689118325710297, 245.204106771190709, 153.0, 18.0 ],
 					"text" : "Prophet08 CC MIDI Table"
 				}
 
@@ -204,7 +263,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 118.209779620170593, 184.28675749226386, 100.0, 22.0 ]
+					"patching_rect" : [ 102.689118325710297, 294.204106771190709, 100.0, 22.0 ]
 				}
 
 			}
@@ -217,7 +276,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 118.209779620170593, 155.28675749226386, 211.608336349328283, 22.0 ],
+					"patching_rect" : [ 102.689118325710297, 265.204106771190709, 211.608336349328283, 22.0 ],
 					"varname" : "prophet08-cc-midi-table"
 				}
 
@@ -230,7 +289,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 47.413225889205933, 135.017878197868413, 61.0, 18.0 ],
+					"patching_rect" : [ 31.892564594745636, 244.935227476795262, 61.0, 18.0 ],
 					"text" : "CC value"
 				}
 
@@ -243,7 +302,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 451.4478314667939, 139.979913903793204, 163.0, 18.0 ],
+					"patching_rect" : [ 453.927170172333604, 245.204106771190709, 163.0, 18.0 ],
 					"text" : "Prophet08 NRPN MIDI Table"
 				}
 
@@ -257,7 +316,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 451.4478314667939, 188.979913903793204, 100.0, 22.0 ]
+					"patching_rect" : [ 453.927170172333604, 294.204106771190709, 100.0, 22.0 ]
 				}
 
 			}
@@ -270,7 +329,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 451.4478314667939, 159.979913903793204, 212.108325868845213, 22.0 ],
+					"patching_rect" : [ 453.927170172333604, 265.204106771190709, 212.108325868845213, 22.0 ],
 					"varname" : "prophet08-nrpn-midi-table"
 				}
 
@@ -283,7 +342,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 386.158578887581712, 170.339149488529074, 50.0, 22.0 ]
+					"patching_rect" : [ 388.637917593121415, 275.563342355926579, 50.0, 22.0 ]
 				}
 
 			}
@@ -297,7 +356,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 464.877584174275285, 248.02509559543978, 50.0, 22.0 ],
+					"patching_rect" : [ 467.356922879814988, 353.249288462837285, 50.0, 22.0 ],
 					"varname" : "prophet08-midi-channel"
 				}
 
@@ -311,7 +370,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 386.158578887581712, 139.505761325359344, 42.0, 30.0 ],
+					"patching_rect" : [ 388.637917593121415, 244.72995419275685, 42.0, 30.0 ],
 					"text" : "NRPN Value"
 				}
 
@@ -1639,7 +1698,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 386.158578887581712, 278.198649360259878, 123.0, 22.0 ],
+					"patching_rect" : [ 388.637917593121415, 383.422842227657384, 123.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -1662,7 +1721,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 211.692919353644129, 232.563121130348009, 40.0, 22.0 ],
+					"patching_rect" : [ 196.172258059183832, 342.480470409274858, 40.0, 22.0 ],
 					"varname" : "midi-channel[1]"
 				}
 
@@ -1675,7 +1734,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 211.692919353644129, 212.563121130348009, 85.0, 18.0 ],
+					"patching_rect" : [ 196.172258059183832, 322.480470409274858, 85.0, 18.0 ],
 					"text" : "MIDI Channel"
 				}
 
@@ -1690,7 +1749,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 47.413225889205933, 157.251246846477443, 50.0, 22.0 ]
+					"patching_rect" : [ 31.892564594745636, 267.168596125404292, 50.0, 22.0 ]
 				}
 
 			}
@@ -1700,7 +1759,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 3,
 					"numoutlets" : 0,
-					"patching_rect" : [ 118.209779620170593, 240.82758348214702, 40.0, 22.0 ],
+					"patching_rect" : [ 102.689118325710297, 350.744932761073869, 40.0, 22.0 ],
 					"text" : "ctlout"
 				}
 
@@ -1714,7 +1773,7 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 118.209779620170593, 135.28675749226386, 211.608336349328283, 71.0 ],
+					"patching_rect" : [ 102.689118325710297, 245.204106771190709, 211.608336349328283, 71.0 ],
 					"proportion" : 0.01,
 					"rounded" : 4,
 					"style" : "AudioStatus_Menu"
@@ -1730,7 +1789,7 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 451.4478314667939, 139.979913903793204, 212.108325868845213, 71.0 ],
+					"patching_rect" : [ 453.927170172333604, 245.204106771190709, 212.108325868845213, 71.0 ],
 					"proportion" : 0.01,
 					"rounded" : 4,
 					"style" : "AudioStatus_Menu"
