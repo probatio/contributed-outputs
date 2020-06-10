@@ -39,6 +39,30 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-415",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 2212.075001090764999, 594.0, 77.0, 22.0 ],
+					"text" : "r midi-device"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-414",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1899.075001090764999, 594.0, 77.0, 22.0 ],
+					"text" : "r midi-device"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"fontname" : "Menlo",
 					"id" : "obj-413",
 					"maxclass" : "comment",
@@ -2182,8 +2206,8 @@
 					"maxclass" : "newobj",
 					"numinlets" : 3,
 					"numoutlets" : 0,
-					"patching_rect" : [ 2233.525002270936966, 698.604106747348851, 49.0, 22.0 ],
-					"text" : "noteout"
+					"patching_rect" : [ 2233.525002270936966, 698.604106747348851, 69.0, 22.0 ],
+					"text" : "noteout a 1"
 				}
 
 			}
@@ -7991,8 +8015,8 @@
 					"maxclass" : "newobj",
 					"numinlets" : 3,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1920.525002270936966, 698.604106747348851, 49.0, 22.0 ],
-					"text" : "noteout"
+					"patching_rect" : [ 1920.525002270936966, 698.604106747348851, 69.0, 22.0 ],
+					"text" : "noteout a 1"
 				}
 
 			}
@@ -11383,8 +11407,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "list" ],
-					"patching_rect" : [ 362.0, 966.0, 279.0, 22.0 ],
-					"text" : "map.in Sustain-on/off i @unit u @min 0 @max 127"
+					"patching_rect" : [ 362.0, 966.0, 280.0, 22.0 ],
+					"text" : "map.in Sustain-on-off i @unit u @min 0 @max 127"
 				}
 
 			}
@@ -13110,7 +13134,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-163",
-					"items" : [ "AU DLS Synth 1", ",", "Driver IAC Barramento 1", ",", "from Max 1", ",", "from Max 2" ],
+					"items" : [ "AU DLS Synth 1", ",", "Driver IAC Barramento 1", ",", "from Max 1", ",", "from Max 2", ",", "UMC204HD 192k" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -13145,7 +13169,7 @@
 						"MIDI-Note[1]" : [ 0 ],
 						"MIDI-Note[2]" : [ 36 ],
 						"MIDI-Note[3]" : [ 59 ],
-						"MIDI-device" : [ 2 ],
+						"MIDI-device" : [ 0 ],
 						"MIDI_CC_Toggle[1]" : [ 1 ],
 						"MIDI_CC_Toggle[3]" : [ 1 ],
 						"MIDI_CC_Toggle[4]" : [ 1 ],
@@ -14803,6 +14827,20 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-329", 0 ],
+					"source" : [ "obj-414", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-393", 0 ],
+					"source" : [ "obj-415", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-348", 1 ],
 					"source" : [ "obj-556", 0 ]
 				}
@@ -14908,16 +14946,10 @@
 				"boxes" : [ "obj-234", "obj-235", "obj-236", "obj-233" ]
 			}
 , 			{
-				"boxes" : [ "obj-340", "obj-339", "obj-97", "obj-338", "obj-98", "obj-315", "obj-308", "obj-306", "obj-305", "obj-307", "obj-109", "obj-331", "obj-330", "obj-325", "obj-324", "obj-322", "obj-321", "obj-302", "obj-326", "obj-323", "obj-337", "obj-336", "obj-335", "obj-329", "obj-320", "obj-319", "obj-316", "obj-314", "obj-313", "obj-304", "obj-312", "obj-334", "obj-333", "obj-332", "obj-318", "obj-317", "obj-303", "obj-327", "obj-328", "obj-309", "obj-311", "obj-310" ]
-			}
-, 			{
 				"boxes" : [ "obj-354", "obj-555", "obj-556", "obj-557" ]
 			}
 , 			{
 				"boxes" : [ "obj-360", "obj-357", "obj-358", "obj-359" ]
-			}
-, 			{
-				"boxes" : [ "obj-406", "obj-405", "obj-403", "obj-402", "obj-404", "obj-379", "obj-372", "obj-370", "obj-369", "obj-371", "obj-368", "obj-395", "obj-394", "obj-389", "obj-388", "obj-386", "obj-385", "obj-365", "obj-390", "obj-387", "obj-401", "obj-400", "obj-399", "obj-393", "obj-384", "obj-383", "obj-380", "obj-378", "obj-377", "obj-367", "obj-376", "obj-398", "obj-397", "obj-396", "obj-382", "obj-381", "obj-366", "obj-391", "obj-392", "obj-373", "obj-375", "obj-374" ]
 			}
  ],
 		"styles" : [ 			{
